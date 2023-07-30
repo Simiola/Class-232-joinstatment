@@ -10,3 +10,12 @@ inner join
 company_orders
 on
 customers.id = company_orders.customer_id
+
+we are getting the suppliers details and which products they are supplying to the customer by using inner join
+select suppliers.company_name, suppliers.contact_name, suppliers.phone, company_products.name
+from
+suppliers
+inner join
+company_products
+on
+suppliers.id= company_products.supplier_id
