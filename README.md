@@ -21,3 +21,16 @@ inner join
 company_products
 on
 suppliers.id= company_products.supplier_id
+
+we are getting the suppliers details and which products they are supplying to the customer by using inner join and also checking wether the products are discontinued or not.
+
+
+select suppliers.company_name, suppliers.contact_name, suppliers.phone, company_products.name
+from
+suppliers
+inner join
+company_products
+on
+suppliers.id= company_products.supplier_id
+and
+company_products.is_discontinued = 1
